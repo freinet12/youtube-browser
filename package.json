@@ -1,5 +1,6 @@
 {
   "name": "youtube-browser",
+  "author": "Freinet Brutus",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +10,12 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "bootstrap-vue": "^2.10.0",
     "core-js": "^3.6.4",
+    "popper": "^1.0.1",
+    "portal-vue": "^2.1.7",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5",
@@ -38,12 +44,19 @@
     },
     "extends": [
       "plugin:vue/essential",
+      "plugin:vue/strongly-recommended",
       "@vue/airbnb"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {},
+    "rules": {
+      "linebreak-style": [
+        0,
+        "unix"
+      ],
+      "no-multiple-empty-lines": 0
+    },
     "overrides": [
       {
         "files": [
