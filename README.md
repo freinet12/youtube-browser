@@ -1,4 +1,5 @@
 # YouTube Browser
+A simple video browser using the YouTube Data API
 
 ## Project setup
 ```
