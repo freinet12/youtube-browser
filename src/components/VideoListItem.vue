@@ -52,11 +52,14 @@ export default {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.05);
         border-radius: 5px;
         position: relative;
+        padding-right: .5rem;
+        
     }
 
     .thumbnail{
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
+        height: auto;
     }
 
     li:hover{

@@ -6,11 +6,10 @@
                 aspect="21by9"
                 :src="videoUrl"
                 allowfullscreen
+                autoplay='1'
             />
             <div class="details">
-                <h5>
-                    {{video.snippet.title}}
-                </h5>
+                <h6 v-html="video.snippet.title"></h6>
                 <p>
                     {{video.snippet.channelTitle}}
                 </p>
@@ -30,7 +29,7 @@ export default {
     computed: {
         videoUrl(){
             const { videoId } = this.video.id;
-            return `https://www.youtube.com/embed/${videoId}`;
+            return `https://www.youtube.com/embed/${videoId}?autoplay=1`;
         }
     }
 

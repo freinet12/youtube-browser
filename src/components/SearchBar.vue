@@ -29,15 +29,17 @@ export default {
 </script>
 
 <style scoped>
-    div{
-        padding: 1.5rem;
-        padding-right: 20rem
-    }
+    @media screen and (min-width: 320px) {
+        div{
+            padding: 1rem;
+        }
 
-    .searchbar{
-        position: relative;
-        bottom: .2rem;
-        background-color: #eff0f5;
-    
+        .searchbar{
+            position: relative;
+            bottom: .2rem;
+            background-color: #eff0f5;
+        
+        } 
     }
+    
 </style>
